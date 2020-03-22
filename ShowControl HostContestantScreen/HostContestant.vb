@@ -995,24 +995,32 @@ Public Class HostContestant
             AtaAns2percents_Textbox.Text = "" + ataVotesArray(1) + "%"
             AtaAns3percents_Textbox.Text = "" + ataVotesArray(2) + "%"
             AtaAns4percents_Textbox.Text = "" + ataVotesArray(3) + "%"
-            Dim dictionary As New Dictionary(Of Integer, Double) From {
-            {1, ataVotesArray(0)},
-            {2, ataVotesArray(1)},
-            {3, ataVotesArray(2)},
-            {4, ataVotesArray(3)}
-        }
-            Dim maxVotePercentage As Double = dictionary.Values.Max
+
+            Array.Sort(ataVotesArray)
+            Array.Reverse(ataVotesArray)
+            Dim maxVotePercentage As Double = 0
+            If Not Double.TryParse(ataVotesArray.ElementAt(0), maxVotePercentage) Then
+                Return
+            End If
+
+            'vrati gi nazad za da se zapazi redosled abcd na glasovi
+            ataVotesArray = ataVotes.Split(";")
+
             If maxVotePercentage = 0 Then Return
-            If maxVotePercentage = ataVotesArray(0) Then
+
+            If maxVotePercentage.Equals(ataVotesArray(0)) Then
                 AtaAns1_Textbox.BackColor = Color.DarkOrange
                 AtaAns1percents_Textbox.BackColor = Color.DarkOrange
-            ElseIf maxVotePercentage = ataVotesArray(1) Then
+            End If
+            If maxVotePercentage.Equals(ataVotesArray(1)) Then
                 AtaAns2_Textbox.BackColor = Color.DarkOrange
                 AtaAns2percents_Textbox.BackColor = Color.DarkOrange
-            ElseIf maxVotePercentage = ataVotesArray(2) Then
+            End If
+            If maxVotePercentage.Equals(ataVotesArray(2)) Then
                 AtaAns3_Textbox.BackColor = Color.DarkOrange
                 AtaAns3percents_Textbox.BackColor = Color.DarkOrange
-            ElseIf maxVotePercentage = ataVotesArray(3) Then
+            End If
+            If maxVotePercentage.Equals(ataVotesArray(3)) Then
                 AtaAns4_Textbox.BackColor = Color.DarkOrange
                 AtaAns4percents_Textbox.BackColor = Color.DarkOrange
             End If

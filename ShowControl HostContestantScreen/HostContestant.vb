@@ -319,7 +319,7 @@ Public Class HostContestant
         End If
 
         Dim AtaState As String = wwtbamPlayState.ATASTATE 'GetValueStringBetweenTags(wwtbamPlayState, "<ATASTATE>", "</ATASTATE>")
-        If String.Compare(hostContestantData.ataState, AtaState, True) <> 0 Then
+        If String.Compare(hostContestantData.currentAtaState, AtaState, True) <> 0 Then
             If String.Compare(AtaState, "NONE", True) = 0 Then
                 AskTheAudienceGraphHide()
             ElseIf String.Compare(AtaState, "CLEARDIAGRAM", True) = 0 Then
@@ -336,9 +336,23 @@ Public Class HostContestant
             ContestantLoad(wwtbamPlayState.CONTESTANTNAMECITY, wwtbamPlayState.PARTNERNAME)
         End If
 
+        UserInterfaceAdaptation()
+
         ''Dim PronunciationState As String
         ''Dim StqState As String
 
+    End Sub
+
+    Private Sub UserInterfaceAdaptation()
+        If hostContestantData._isHost Then
+            'sostojba publika
+            If String.Equals(hostContestantData.currentAtaState, "CLEARDIAGRAM", StringComparison.OrdinalIgnoreCase) _
+                OrElse String.Equals(hostContestantData.currentAtaState, "DIAGRAMWITHPERCENTAGE", StringComparison.OrdinalIgnoreCase) Then
+
+                ExplanationDissolve()
+                'ExplanationQuestion_TextBox.Visible = False
+            End If
+        End If
     End Sub
 
     Private Sub TotalPrizeWonReveal(QuestionAnswerState As String)
@@ -513,6 +527,8 @@ Public Class HostContestant
                         InUsemarkLifeline(i)
                     ElseIf String.Compare(LifelineStateArray(i - 1), "USED", True) = 0 Then
                         XmarkLifeline(i)
+                    ElseIf String.Compare(LifelineStateArray(i - 1), "DISABLED", True) = 0 Then
+                        DisablemarkLifeline(i)
                     End If
                 Next
             End If
@@ -944,6 +960,22 @@ Public Class HostContestant
         End If
     End Sub
 
+    Friend Sub DisablemarkLifeline(lifelinePosition As Integer)
+        If lifelinePosition = 1 Then
+            Lifeline1_PictureBox.BackgroundImage = My.Resources.ResourceManager.GetObject($"{hostContestantData.Lifeline1Name.ToUpper}_DSBL")
+            hostContestantData.Lifeline1State = "DISABLED"
+        ElseIf lifelinePosition = 2 Then
+            Lifeline2_PictureBox.BackgroundImage = My.Resources.ResourceManager.GetObject($"{hostContestantData.Lifeline2Name.ToUpper}_DSBL")
+            hostContestantData.Lifeline2State = "DISABLED"
+        ElseIf lifelinePosition = 3 Then
+            Lifeline3_PictureBox.BackgroundImage = My.Resources.ResourceManager.GetObject($"{hostContestantData.Lifeline3Name.ToUpper}_DSBL")
+            hostContestantData.Lifeline3State = "DISABLED"
+        ElseIf lifelinePosition = 4 Then
+            Lifeline4_PictureBox.BackgroundImage = My.Resources.ResourceManager.GetObject($"{hostContestantData.Lifeline4Name.ToUpper}_DSBL")
+            hostContestantData.Lifeline4State = "DISABLED"
+        End If
+    End Sub
+
     Friend Sub FiftyFiftyFire(RemoveAnswers As String)
         Dim Remove As Char() = RemoveAnswers.ToCharArray
         If Remove.Count = 2 Then
@@ -984,7 +1016,7 @@ Public Class HostContestant
         AtaAns2percents_Textbox.Text = ""
         AtaAns3percents_Textbox.Text = ""
         AtaAns4percents_Textbox.Text = ""
-        hostContestantData.ataState = "CLEARDIAGRAM"
+        hostContestantData.currentAtaState = "CLEARDIAGRAM"
     End Sub
 
     Private Sub AskTheAudienceEndVote(ataVotes As String)
@@ -1025,7 +1057,7 @@ Public Class HostContestant
                 AtaAns4percents_Textbox.BackColor = Color.DarkOrange
             End If
         End If
-        hostContestantData.ataState = "DIAGRAMWITHPERCENTAGE"
+        hostContestantData.currentAtaState = "DIAGRAMWITHPERCENTAGE"
     End Sub
 
     Private Sub AskTheAudienceGraphHide()
@@ -1037,7 +1069,7 @@ Public Class HostContestant
         AtaAns2percents_Textbox.Visible = False
         AtaAns3percents_Textbox.Visible = False
         AtaAns4percents_Textbox.Visible = False
-        hostContestantData.ataState = "NONE"
+        hostContestantData.currentAtaState = "NONE"
     End Sub
 
     Private Sub SetMilestone(secondMilestone As String)

@@ -349,7 +349,7 @@
                 HostContestant.ContestantName_Label.Size = New System.Drawing.Size(841, 57)
                 HostContestant.Panel2.Size = New System.Drawing.Size(150, 137)
                 HostContestant.GameLimitedClock_Label.Size = New System.Drawing.Size(139, 84)
-                HostContestant.Question_PlaceGfx.Size = New System.Drawing.Size(1781, 137)
+                HostContestant.Question_PlaceGfx.Size = New System.Drawing.Size(1781, 133) '137
                 HostContestant.Question_Label.Size = New System.Drawing.Size(1760, 120)
                 HostContestant.PictureBox4.Size = New System.Drawing.Size(1976, 4)
                 HostContestant.Answer2_PlaceGfx.Size = New System.Drawing.Size(817, 74)
@@ -583,7 +583,7 @@
                 HostContestant.ContestantName_Label.Size = New System.Drawing.Size(682, 38)
                 HostContestant.Panel2.Size = New System.Drawing.Size(116, 105)
                 HostContestant.GameLimitedClock_Label.Size = New System.Drawing.Size(116, 61)
-                HostContestant.Question_PlaceGfx.Size = New System.Drawing.Size(1257, 112)
+                HostContestant.Question_PlaceGfx.Size = New System.Drawing.Size(1257, 107) '112
                 HostContestant.Question_Label.Size = New System.Drawing.Size(1244, 95)
                 HostContestant.PictureBox4.Size = New System.Drawing.Size(1376, 4)
                 HostContestant.Answer2_PlaceGfx.Size = New System.Drawing.Size(592, 61)

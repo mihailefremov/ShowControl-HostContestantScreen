@@ -37,7 +37,6 @@
     Public fiftyFifty = ""
     Public paf = ""
 
-    Public ataState As String = "NONE"
     Public ataVotes As String = "0;0;0;0"
     'Public _ataUsedOnThisQ As Boolean = False
     'Public _atavote1 As Double = 0
@@ -69,7 +68,7 @@
 
     'For Optimization
     Public currentQAState As String = ""
-    Public currentATAState As String = ""
+    Public currentAtaState As String = "NONE"
     Public currentExplState As String = ""
     Public currentStqState As String = ""
     Public currentDoubleDipState As String = ""

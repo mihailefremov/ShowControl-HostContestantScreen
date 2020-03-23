@@ -209,9 +209,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="atomic-64.ico" />
+    <None Include="Resources\ATE_0.png" />
+    <None Include="Resources\ATE_1.png" />
+    <None Include="Resources\ATE_X.png" />
+    <Content Include="Resources\STQ_0.png" />
+    <Content Include="Resources\STQ_1.png" />
+    <Content Include="Resources\STQ_X.png" />
     <None Include="Resources\DDIP_0.png" />
     <None Include="Resources\DDIP_1.png" />
     <None Include="Resources\DDIP_X.png" />
+    <Content Include="Resources\ATH_0.png" />
+    <Content Include="Resources\ATH_1.png" />
+    <Content Include="Resources\ATH_X.png" />
     <Content Include="Resources\DoubleDipAC.png" />
     <Content Include="Resources\DoubleDipBD.png" />
   </ItemGroup>

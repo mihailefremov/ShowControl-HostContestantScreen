@@ -659,7 +659,7 @@ Partial Class HostContestant
         'Lifeline2_PictureBox
         '
         Me.Lifeline2_PictureBox.BackColor = System.Drawing.Color.Transparent
-        Me.Lifeline2_PictureBox.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.DDIP_0
+        Me.Lifeline2_PictureBox.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.PAF_0
         Me.Lifeline2_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Lifeline2_PictureBox.Location = New System.Drawing.Point(104, 4)
         Me.Lifeline2_PictureBox.Name = "Lifeline2_PictureBox"
@@ -816,7 +816,7 @@ Partial Class HostContestant
         Me.Question_PlaceGfx.Controls.Add(Me.Question_Label)
         Me.Question_PlaceGfx.Location = New System.Drawing.Point(60, 9)
         Me.Question_PlaceGfx.Name = "Question_PlaceGfx"
-        Me.Question_PlaceGfx.Size = New System.Drawing.Size(1257, 112)
+        Me.Question_PlaceGfx.Size = New System.Drawing.Size(1257, 107)
         Me.Question_PlaceGfx.TabIndex = 1297
         '
         'Question_Label

@@ -146,6 +146,7 @@ Partial Class HostContestant
         'MoneyTreePanel
         '
         Me.MoneyTreePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.MoneyTreePanel.BackgroundImage = CType(resources.GetObject("MoneyTreePanel.BackgroundImage"), System.Drawing.Image)
         Me.MoneyTreePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MoneyTreePanel.Controls.Add(Me.Lozenge_15)
         Me.MoneyTreePanel.Controls.Add(Me.Lozenge_14)

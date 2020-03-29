@@ -1246,7 +1246,7 @@ Public Class HostContestant
         GUIHelpers.FitTextInsideControl(ProducersChat_TextBox, myFont)
     End Sub
 
-    Private Sub ExplanationQuestion_TextBox_TextChanged(sender As Object, e As EventArgs)
+    Private Sub ExplanationQuestion_TextBox_TextChanged(sender As Object, e As EventArgs) Handles ExplanationQuestion_TextBox.TextChanged
         If String.IsNullOrEmpty(ExplanationQuestion_TextBox.Text) OrElse (Not hostContestantData._isHost) Then Return
 
         Dim myFont As Font = New Font("Arial", GUIDesignerPropertisContext.ExplanationFontSize, FontStyle.Regular, GraphicsUnit.Point)

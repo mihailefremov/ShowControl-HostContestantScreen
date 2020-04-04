@@ -125,8 +125,8 @@
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +212,7 @@
     <None Include="Resources\ATE_0.png" />
     <None Include="Resources\ATE_1.png" />
     <None Include="Resources\ATE_X.png" />
+    <Content Include="Resources\QUESTION.png" />
     <Content Include="Resources\STQ_0.png" />
     <Content Include="Resources\STQ_1.png" />
     <Content Include="Resources\STQ_X.png" />

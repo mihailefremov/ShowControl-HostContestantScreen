@@ -118,101 +118,80 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Drop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Drop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CorrectAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CorrectAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FinalAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FinalAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5050_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5050_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PAF_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PAF_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ATA_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ATA_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CashMountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CashMountain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Away" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Away.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CorrectBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CorrectBD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RedCross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedCross.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FinalBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FinalBD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClockLIMITED red box" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClockLIMITED red box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="contestantNameCity" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contestantNameCity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ATA_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ATA_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ATA_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ATA_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PAF_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PAF_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PAF_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PAF_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="STQ_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STQ_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="STQ_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STQ_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="STQ_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STQ_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5050_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5050_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5050_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5050_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DoubleDipAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoubleDipAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DoubleDipBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DoubleDipBD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DDIP_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DDIP_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DDIP_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DDIP_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PAF_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PAF_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DDIP_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DDIP_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ATA_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATA_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATH_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATH_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoubleDipBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoubleDipBD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CashMountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CashMountain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATE_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATE_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5050_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5050_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedCross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedCross.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contestantNameCity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contestantNameCity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FinalAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FinalAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STQ_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STQ_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Drop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STQ_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STQ_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATA_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATA_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATH_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATH_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PAF_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PAF_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Away" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Away.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STQ_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STQ_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ATE_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ATE_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ATE_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ATE_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ClockLIMITED red box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClockLIMITED red box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ATE_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ATE_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,10 +199,31 @@
   <data name="ATH_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ATH_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ATH_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ATH_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DDIP_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DDIP_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ATH_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ATH_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FinalBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FinalBD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CorrectAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CorrectAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5050_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5050_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5050_X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5050_X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDIP_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DDIP_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ATA_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ATA_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoubleDipAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DoubleDipAC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CorrectBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CorrectBD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

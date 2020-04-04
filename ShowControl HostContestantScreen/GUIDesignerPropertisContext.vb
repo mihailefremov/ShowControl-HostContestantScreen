@@ -13,8 +13,8 @@
             Case "1080", "1080P", "FULLHD", "1920X1080"
                 QuestionFontSize = 35
                 AnswerFontSize = 35
-                ExplanationFontSize = 28
-                DirectorsChatFontSize = 28
+                ExplanationFontSize = 32
+                DirectorsChatFontSize = 34
                 PronunciationFontSize = 28
 
                 QuestionFontCutOff = 1490

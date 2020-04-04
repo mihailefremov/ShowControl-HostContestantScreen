@@ -64,13 +64,10 @@ Partial Class HostContestant
         Me.PronunciationHelp_Textbox = New System.Windows.Forms.Label()
         Me.Correct_Box = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PAFClock_Label = New System.Windows.Forms.Label()
         Me.Timer_DirectMessageBlink = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_DirectMessageUnblink = New System.Windows.Forms.Timer(Me.components)
         Me.ContestantName_Panel = New System.Windows.Forms.Panel()
         Me.ContestantName_Label = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.GameLimitedClock_Label = New System.Windows.Forms.Label()
         Me.Question_PlaceGfx = New System.Windows.Forms.Panel()
         Me.Question_Label = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -106,6 +103,9 @@ Partial Class HostContestant
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.fall = New System.Windows.Forms.TextBox()
         Me.ProducersChat_TextBox = New System.Windows.Forms.Label()
+        Me.ExplanationQuestion_TextBox = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GameLimitedClock_Label = New System.Windows.Forms.Label()
         Me.AtaAns1percents_Textbox = New System.Windows.Forms.Label()
         Me.AtaAns1_Textbox = New System.Windows.Forms.Label()
         Me.AtaAns2percents_Textbox = New System.Windows.Forms.Label()
@@ -114,7 +114,7 @@ Partial Class HostContestant
         Me.AtaAns3_Textbox = New System.Windows.Forms.Label()
         Me.AtaAns4percents_Textbox = New System.Windows.Forms.Label()
         Me.AtaAns4_Textbox = New System.Windows.Forms.Label()
-        Me.ExplanationQuestion_TextBox = New System.Windows.Forms.Label()
+        Me.PAFClock_Label = New System.Windows.Forms.Label()
         Me.MoneyTreePanel.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Lifeline4_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,7 +122,6 @@ Partial Class HostContestant
         CType(Me.Lifeline2_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Lifeline1_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContestantName_Panel.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.Question_PlaceGfx.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Answer2_PlaceGfx.SuspendLayout()
@@ -141,11 +140,12 @@ Partial Class HostContestant
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.fallSumePanel.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'MoneyTreePanel
         '
-        Me.MoneyTreePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.MoneyTreePanel.BackColor = System.Drawing.Color.Transparent
         Me.MoneyTreePanel.BackgroundImage = CType(resources.GetObject("MoneyTreePanel.BackgroundImage"), System.Drawing.Image)
         Me.MoneyTreePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MoneyTreePanel.Controls.Add(Me.Lozenge_15)
@@ -183,9 +183,9 @@ Partial Class HostContestant
         Me.MoneyTreePanel.Controls.Add(Me.Lifeline3_PictureBox)
         Me.MoneyTreePanel.Controls.Add(Me.Lifeline2_PictureBox)
         Me.MoneyTreePanel.Controls.Add(Me.Lifeline1_PictureBox)
-        Me.MoneyTreePanel.Location = New System.Drawing.Point(976, 292)
+        Me.MoneyTreePanel.Location = New System.Drawing.Point(933, 292)
         Me.MoneyTreePanel.Name = "MoneyTreePanel"
-        Me.MoneyTreePanel.Size = New System.Drawing.Size(403, 470)
+        Me.MoneyTreePanel.Size = New System.Drawing.Size(446, 487)
         Me.MoneyTreePanel.TabIndex = 1258
         '
         'Lozenge_15
@@ -637,7 +637,7 @@ Partial Class HostContestant
         'Lifeline4_PictureBox
         '
         Me.Lifeline4_PictureBox.BackColor = System.Drawing.Color.Transparent
-        Me.Lifeline4_PictureBox.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.STQ_0
+        Me.Lifeline4_PictureBox.BackgroundImage = CType(resources.GetObject("Lifeline4_PictureBox.BackgroundImage"), System.Drawing.Image)
         Me.Lifeline4_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Lifeline4_PictureBox.Location = New System.Drawing.Point(292, 4)
         Me.Lifeline4_PictureBox.Name = "Lifeline4_PictureBox"
@@ -649,7 +649,7 @@ Partial Class HostContestant
         'Lifeline3_PictureBox
         '
         Me.Lifeline3_PictureBox.BackColor = System.Drawing.Color.Transparent
-        Me.Lifeline3_PictureBox.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.ATA_0
+        Me.Lifeline3_PictureBox.BackgroundImage = CType(resources.GetObject("Lifeline3_PictureBox.BackgroundImage"), System.Drawing.Image)
         Me.Lifeline3_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Lifeline3_PictureBox.Location = New System.Drawing.Point(198, 4)
         Me.Lifeline3_PictureBox.Name = "Lifeline3_PictureBox"
@@ -660,7 +660,7 @@ Partial Class HostContestant
         'Lifeline2_PictureBox
         '
         Me.Lifeline2_PictureBox.BackColor = System.Drawing.Color.Transparent
-        Me.Lifeline2_PictureBox.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.PAF_0
+        Me.Lifeline2_PictureBox.BackgroundImage = CType(resources.GetObject("Lifeline2_PictureBox.BackgroundImage"), System.Drawing.Image)
         Me.Lifeline2_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Lifeline2_PictureBox.Location = New System.Drawing.Point(104, 4)
         Me.Lifeline2_PictureBox.Name = "Lifeline2_PictureBox"
@@ -671,7 +671,7 @@ Partial Class HostContestant
         'Lifeline1_PictureBox
         '
         Me.Lifeline1_PictureBox.BackColor = System.Drawing.Color.Transparent
-        Me.Lifeline1_PictureBox.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources._5050_0
+        Me.Lifeline1_PictureBox.BackgroundImage = CType(resources.GetObject("Lifeline1_PictureBox.BackgroundImage"), System.Drawing.Image)
         Me.Lifeline1_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Lifeline1_PictureBox.Location = New System.Drawing.Point(10, 4)
         Me.Lifeline1_PictureBox.Name = "Lifeline1_PictureBox"
@@ -710,11 +710,11 @@ Partial Class HostContestant
         Me.Correct_Box.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.Correct_Box.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Correct_Box.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Correct_Box.Font = New System.Drawing.Font("Arial", 25.25!)
+        Me.Correct_Box.Font = New System.Drawing.Font("Arial", 33.25!)
         Me.Correct_Box.ForeColor = System.Drawing.Color.White
-        Me.Correct_Box.Location = New System.Drawing.Point(575, 293)
+        Me.Correct_Box.Location = New System.Drawing.Point(743, 294)
         Me.Correct_Box.Name = "Correct_Box"
-        Me.Correct_Box.Size = New System.Drawing.Size(46, 39)
+        Me.Correct_Box.Size = New System.Drawing.Size(58, 51)
         Me.Correct_Box.TabIndex = 1286
         Me.Correct_Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.Correct_Box.Visible = False
@@ -733,21 +733,6 @@ Partial Class HostContestant
         Me.Label1.Text = "90"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PAFClock_Label
-        '
-        Me.PAFClock_Label.BackColor = System.Drawing.Color.Transparent
-        Me.PAFClock_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.PAFClock_Label.Font = New System.Drawing.Font("Arial", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PAFClock_Label.ForeColor = System.Drawing.Color.White
-        Me.PAFClock_Label.ImageKey = "(none)"
-        Me.PAFClock_Label.Location = New System.Drawing.Point(837, 497)
-        Me.PAFClock_Label.Name = "PAFClock_Label"
-        Me.PAFClock_Label.Size = New System.Drawing.Size(116, 61)
-        Me.PAFClock_Label.TabIndex = 1304
-        Me.PAFClock_Label.Text = "30"
-        Me.PAFClock_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.PAFClock_Label.Visible = False
-        '
         'Timer_DirectMessageBlink
         '
         Me.Timer_DirectMessageBlink.Interval = 500
@@ -759,12 +744,12 @@ Partial Class HostContestant
         'ContestantName_Panel
         '
         Me.ContestantName_Panel.BackColor = System.Drawing.Color.Transparent
-        Me.ContestantName_Panel.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.contestantNameCity
+        Me.ContestantName_Panel.BackgroundImage = CType(resources.GetObject("ContestantName_Panel.BackgroundImage"), System.Drawing.Image)
         Me.ContestantName_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContestantName_Panel.Controls.Add(Me.ContestantName_Label)
-        Me.ContestantName_Panel.Location = New System.Drawing.Point(19, 712)
+        Me.ContestantName_Panel.Location = New System.Drawing.Point(19, 717)
         Me.ContestantName_Panel.Name = "ContestantName_Panel"
-        Me.ContestantName_Panel.Size = New System.Drawing.Size(697, 41)
+        Me.ContestantName_Panel.Size = New System.Drawing.Size(903, 41)
         Me.ContestantName_Panel.TabIndex = 1306
         Me.ContestantName_Panel.Visible = False
         '
@@ -777,37 +762,11 @@ Partial Class HostContestant
         Me.ContestantName_Label.ImageKey = "(none)"
         Me.ContestantName_Label.Location = New System.Drawing.Point(8, 0)
         Me.ContestantName_Label.Name = "ContestantName_Label"
-        Me.ContestantName_Label.Size = New System.Drawing.Size(682, 38)
+        Me.ContestantName_Label.Size = New System.Drawing.Size(883, 38)
         Me.ContestantName_Label.TabIndex = 1305
         Me.ContestantName_Label.Text = "ContestantName - City"
         Me.ContestantName_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ContestantName_Label.UseMnemonic = False
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.ClockLIMITED_red_box
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel2.Controls.Add(Me.GameLimitedClock_Label)
-        Me.Panel2.Location = New System.Drawing.Point(837, 291)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(116, 105)
-        Me.Panel2.TabIndex = 1302
-        Me.Panel2.Visible = False
-        '
-        'GameLimitedClock_Label
-        '
-        Me.GameLimitedClock_Label.BackColor = System.Drawing.Color.Transparent
-        Me.GameLimitedClock_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.GameLimitedClock_Label.Font = New System.Drawing.Font("Arial", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GameLimitedClock_Label.ForeColor = System.Drawing.Color.White
-        Me.GameLimitedClock_Label.ImageKey = "(none)"
-        Me.GameLimitedClock_Label.Location = New System.Drawing.Point(3, 16)
-        Me.GameLimitedClock_Label.Name = "GameLimitedClock_Label"
-        Me.GameLimitedClock_Label.Size = New System.Drawing.Size(116, 61)
-        Me.GameLimitedClock_Label.TabIndex = 1222
-        Me.GameLimitedClock_Label.Text = "30"
-        Me.GameLimitedClock_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Question_PlaceGfx
         '
@@ -815,9 +774,9 @@ Partial Class HostContestant
         Me.Question_PlaceGfx.BackgroundImage = CType(resources.GetObject("Question_PlaceGfx.BackgroundImage"), System.Drawing.Image)
         Me.Question_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Question_PlaceGfx.Controls.Add(Me.Question_Label)
-        Me.Question_PlaceGfx.Location = New System.Drawing.Point(60, 9)
+        Me.Question_PlaceGfx.Location = New System.Drawing.Point(62, 11)
         Me.Question_PlaceGfx.Name = "Question_PlaceGfx"
-        Me.Question_PlaceGfx.Size = New System.Drawing.Size(1257, 107)
+        Me.Question_PlaceGfx.Size = New System.Drawing.Size(1250, 105)
         Me.Question_PlaceGfx.TabIndex = 1297
         '
         'Question_Label
@@ -829,7 +788,7 @@ Partial Class HostContestant
         Me.Question_Label.ImageKey = "(none)"
         Me.Question_Label.Location = New System.Drawing.Point(5, 5)
         Me.Question_Label.Name = "Question_Label"
-        Me.Question_Label.Size = New System.Drawing.Size(1244, 95)
+        Me.Question_Label.Size = New System.Drawing.Size(1240, 95)
         Me.Question_Label.TabIndex = 1222
         Me.Question_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Question_Label.UseMnemonic = False
@@ -837,7 +796,7 @@ Partial Class HostContestant
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 61)
+        Me.PictureBox4.Location = New System.Drawing.Point(-2, 61)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(1376, 4)
         Me.PictureBox4.TabIndex = 1296
@@ -846,13 +805,13 @@ Partial Class HostContestant
         'Answer2_PlaceGfx
         '
         Me.Answer2_PlaceGfx.BackColor = System.Drawing.Color.Transparent
-        Me.Answer2_PlaceGfx.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.BD
+        Me.Answer2_PlaceGfx.BackgroundImage = CType(resources.GetObject("Answer2_PlaceGfx.BackgroundImage"), System.Drawing.Image)
         Me.Answer2_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer2_PlaceGfx.Controls.Add(Me.AnswerB_Label)
         Me.Answer2_PlaceGfx.Controls.Add(Me.MarkB_Label)
-        Me.Answer2_PlaceGfx.Location = New System.Drawing.Point(695, 122)
+        Me.Answer2_PlaceGfx.Location = New System.Drawing.Point(693, 122)
         Me.Answer2_PlaceGfx.Name = "Answer2_PlaceGfx"
-        Me.Answer2_PlaceGfx.Size = New System.Drawing.Size(592, 61)
+        Me.Answer2_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer2_PlaceGfx.TabIndex = 1294
         '
         'AnswerB_Label
@@ -890,13 +849,13 @@ Partial Class HostContestant
         'Answer1_PlaceGfx
         '
         Me.Answer1_PlaceGfx.BackColor = System.Drawing.Color.Transparent
-        Me.Answer1_PlaceGfx.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.AC
+        Me.Answer1_PlaceGfx.BackgroundImage = CType(resources.GetObject("Answer1_PlaceGfx.BackgroundImage"), System.Drawing.Image)
         Me.Answer1_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer1_PlaceGfx.Controls.Add(Me.AnswerA_Label)
         Me.Answer1_PlaceGfx.Controls.Add(Me.MarkA_Label)
-        Me.Answer1_PlaceGfx.Location = New System.Drawing.Point(90, 122)
+        Me.Answer1_PlaceGfx.Location = New System.Drawing.Point(83, 122)
         Me.Answer1_PlaceGfx.Name = "Answer1_PlaceGfx"
-        Me.Answer1_PlaceGfx.Size = New System.Drawing.Size(592, 61)
+        Me.Answer1_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer1_PlaceGfx.TabIndex = 1293
         '
         'AnswerA_Label
@@ -934,7 +893,7 @@ Partial Class HostContestant
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 150)
+        Me.PictureBox3.Location = New System.Drawing.Point(-2, 150)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(1376, 4)
         Me.PictureBox3.TabIndex = 1292
@@ -943,13 +902,13 @@ Partial Class HostContestant
         'Answer4_PlaceGfx
         '
         Me.Answer4_PlaceGfx.BackColor = System.Drawing.Color.Transparent
-        Me.Answer4_PlaceGfx.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.BD
+        Me.Answer4_PlaceGfx.BackgroundImage = CType(resources.GetObject("Answer4_PlaceGfx.BackgroundImage"), System.Drawing.Image)
         Me.Answer4_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer4_PlaceGfx.Controls.Add(Me.AnswerD_Label)
         Me.Answer4_PlaceGfx.Controls.Add(Me.MarkD_Label)
-        Me.Answer4_PlaceGfx.Location = New System.Drawing.Point(695, 190)
+        Me.Answer4_PlaceGfx.Location = New System.Drawing.Point(693, 190)
         Me.Answer4_PlaceGfx.Name = "Answer4_PlaceGfx"
-        Me.Answer4_PlaceGfx.Size = New System.Drawing.Size(592, 61)
+        Me.Answer4_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer4_PlaceGfx.TabIndex = 1291
         '
         'AnswerD_Label
@@ -987,13 +946,13 @@ Partial Class HostContestant
         'Answer3_PlaceGfx
         '
         Me.Answer3_PlaceGfx.BackColor = System.Drawing.Color.Transparent
-        Me.Answer3_PlaceGfx.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.AC
+        Me.Answer3_PlaceGfx.BackgroundImage = CType(resources.GetObject("Answer3_PlaceGfx.BackgroundImage"), System.Drawing.Image)
         Me.Answer3_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer3_PlaceGfx.Controls.Add(Me.AnswerC_Label)
         Me.Answer3_PlaceGfx.Controls.Add(Me.MarkC_Label)
-        Me.Answer3_PlaceGfx.Location = New System.Drawing.Point(90, 190)
+        Me.Answer3_PlaceGfx.Location = New System.Drawing.Point(83, 190)
         Me.Answer3_PlaceGfx.Name = "Answer3_PlaceGfx"
-        Me.Answer3_PlaceGfx.Size = New System.Drawing.Size(592, 61)
+        Me.Answer3_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer3_PlaceGfx.TabIndex = 1290
         '
         'AnswerC_Label
@@ -1031,7 +990,7 @@ Partial Class HostContestant
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 219)
+        Me.PictureBox2.Location = New System.Drawing.Point(-2, 219)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(1376, 4)
         Me.PictureBox2.TabIndex = 1289
@@ -1048,16 +1007,16 @@ Partial Class HostContestant
         Me.awayPanel.Controls.Add(Me.PictureBox9)
         Me.awayPanel.Controls.Add(Me.Label6)
         Me.awayPanel.Controls.Add(Me.Away)
-        Me.awayPanel.Location = New System.Drawing.Point(18, 293)
+        Me.awayPanel.Location = New System.Drawing.Point(12, 293)
         Me.awayPanel.Name = "awayPanel"
-        Me.awayPanel.Size = New System.Drawing.Size(233, 55)
+        Me.awayPanel.Size = New System.Drawing.Size(300, 55)
         Me.awayPanel.TabIndex = 1307
         Me.awayPanel.Visible = False
         '
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.Blue
-        Me.PictureBox9.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.Away
+        Me.PictureBox9.BackgroundImage = CType(resources.GetObject("PictureBox9.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox9.Location = New System.Drawing.Point(3, 2)
         Me.PictureBox9.Name = "PictureBox9"
@@ -1086,7 +1045,7 @@ Partial Class HostContestant
         Me.Away.ForeColor = System.Drawing.Color.White
         Me.Away.Location = New System.Drawing.Point(150, 18)
         Me.Away.Name = "Away"
-        Me.Away.Size = New System.Drawing.Size(78, 31)
+        Me.Away.Size = New System.Drawing.Size(134, 31)
         Me.Away.TabIndex = 1302
         Me.Away.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1096,16 +1055,16 @@ Partial Class HostContestant
         Me.sumePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.sumePanel.Controls.Add(Me.PictureBox1)
         Me.sumePanel.Controls.Add(Me.sume)
-        Me.sumePanel.Location = New System.Drawing.Point(250, 293)
+        Me.sumePanel.Location = New System.Drawing.Point(317, 293)
         Me.sumePanel.Name = "sumePanel"
-        Me.sumePanel.Size = New System.Drawing.Size(233, 55)
+        Me.sumePanel.Size = New System.Drawing.Size(300, 55)
         Me.sumePanel.TabIndex = 1308
         Me.sumePanel.Visible = False
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.CashMountain
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(3, 2)
         Me.PictureBox1.Name = "PictureBox1"
@@ -1121,7 +1080,7 @@ Partial Class HostContestant
         Me.sume.ForeColor = System.Drawing.Color.White
         Me.sume.Location = New System.Drawing.Point(55, 17)
         Me.sume.Name = "sume"
-        Me.sume.Size = New System.Drawing.Size(175, 31)
+        Me.sume.Size = New System.Drawing.Size(231, 31)
         Me.sume.TabIndex = 1264
         Me.sume.Text = "0"
         Me.sume.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -1132,16 +1091,16 @@ Partial Class HostContestant
         Me.correctSumePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.correctSumePanel.Controls.Add(Me.PictureBox5)
         Me.correctSumePanel.Controls.Add(Me.qfor)
-        Me.correctSumePanel.Location = New System.Drawing.Point(19, 346)
+        Me.correctSumePanel.Location = New System.Drawing.Point(12, 352)
         Me.correctSumePanel.Name = "correctSumePanel"
-        Me.correctSumePanel.Size = New System.Drawing.Size(233, 55)
+        Me.correctSumePanel.Size = New System.Drawing.Size(300, 55)
         Me.correctSumePanel.TabIndex = 1310
         Me.correctSumePanel.Visible = False
         '
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.PictureBox5.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.Tick
+        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox5.Location = New System.Drawing.Point(4, 2)
         Me.PictureBox5.Name = "PictureBox5"
@@ -1157,7 +1116,7 @@ Partial Class HostContestant
         Me.qfor.ForeColor = System.Drawing.Color.White
         Me.qfor.Location = New System.Drawing.Point(55, 14)
         Me.qfor.Name = "qfor"
-        Me.qfor.Size = New System.Drawing.Size(173, 31)
+        Me.qfor.Size = New System.Drawing.Size(229, 31)
         Me.qfor.TabIndex = 1300
         Me.qfor.Text = "0"
         Me.qfor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -1168,16 +1127,16 @@ Partial Class HostContestant
         Me.incorrectSumePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.incorrectSumePanel.Controls.Add(Me.PictureBox8)
         Me.incorrectSumePanel.Controls.Add(Me.incorrect)
-        Me.incorrectSumePanel.Location = New System.Drawing.Point(251, 346)
+        Me.incorrectSumePanel.Location = New System.Drawing.Point(317, 352)
         Me.incorrectSumePanel.Name = "incorrectSumePanel"
-        Me.incorrectSumePanel.Size = New System.Drawing.Size(233, 55)
+        Me.incorrectSumePanel.Size = New System.Drawing.Size(300, 55)
         Me.incorrectSumePanel.TabIndex = 1311
         Me.incorrectSumePanel.Visible = False
         '
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.RedCross
+        Me.PictureBox8.BackgroundImage = CType(resources.GetObject("PictureBox8.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox8.Location = New System.Drawing.Point(4, 2)
         Me.PictureBox8.Name = "PictureBox8"
@@ -1193,7 +1152,7 @@ Partial Class HostContestant
         Me.incorrect.ForeColor = System.Drawing.Color.White
         Me.incorrect.Location = New System.Drawing.Point(49, 15)
         Me.incorrect.Name = "incorrect"
-        Me.incorrect.Size = New System.Drawing.Size(180, 31)
+        Me.incorrect.Size = New System.Drawing.Size(236, 31)
         Me.incorrect.TabIndex = 1301
         Me.incorrect.Text = "0"
         Me.incorrect.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -1204,16 +1163,16 @@ Partial Class HostContestant
         Me.fallSumePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.fallSumePanel.Controls.Add(Me.PictureBox17)
         Me.fallSumePanel.Controls.Add(Me.fall)
-        Me.fallSumePanel.Location = New System.Drawing.Point(482, 346)
+        Me.fallSumePanel.Location = New System.Drawing.Point(621, 352)
         Me.fallSumePanel.Name = "fallSumePanel"
-        Me.fallSumePanel.Size = New System.Drawing.Size(233, 55)
+        Me.fallSumePanel.Size = New System.Drawing.Size(300, 55)
         Me.fallSumePanel.TabIndex = 1312
         Me.fallSumePanel.Visible = False
         '
         'PictureBox17
         '
         Me.PictureBox17.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.PictureBox17.BackgroundImage = Global.ShowControl_HostScreen.My.Resources.Resources.Drop
+        Me.PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox17.Location = New System.Drawing.Point(2, 2)
         Me.PictureBox17.Name = "PictureBox17"
@@ -1229,7 +1188,7 @@ Partial Class HostContestant
         Me.fall.ForeColor = System.Drawing.Color.White
         Me.fall.Location = New System.Drawing.Point(54, 15)
         Me.fall.Name = "fall"
-        Me.fall.Size = New System.Drawing.Size(176, 31)
+        Me.fall.Size = New System.Drawing.Size(232, 31)
         Me.fall.TabIndex = 1250
         Me.fall.Text = "0"
         Me.fall.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -1241,12 +1200,52 @@ Partial Class HostContestant
         Me.ProducersChat_TextBox.Font = New System.Drawing.Font("Arial", 21.0!, System.Drawing.FontStyle.Bold)
         Me.ProducersChat_TextBox.ForeColor = System.Drawing.Color.Yellow
         Me.ProducersChat_TextBox.ImageKey = "(none)"
-        Me.ProducersChat_TextBox.Location = New System.Drawing.Point(16, 405)
+        Me.ProducersChat_TextBox.Location = New System.Drawing.Point(12, 416)
         Me.ProducersChat_TextBox.Name = "ProducersChat_TextBox"
-        Me.ProducersChat_TextBox.Size = New System.Drawing.Size(702, 106)
+        Me.ProducersChat_TextBox.Size = New System.Drawing.Size(910, 106)
         Me.ProducersChat_TextBox.TabIndex = 1313
         Me.ProducersChat_TextBox.UseMnemonic = False
         Me.ProducersChat_TextBox.Visible = False
+        '
+        'ExplanationQuestion_TextBox
+        '
+        Me.ExplanationQuestion_TextBox.BackColor = System.Drawing.Color.Transparent
+        Me.ExplanationQuestion_TextBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ExplanationQuestion_TextBox.Font = New System.Drawing.Font("Arial", 20.0!)
+        Me.ExplanationQuestion_TextBox.ForeColor = System.Drawing.Color.White
+        Me.ExplanationQuestion_TextBox.ImageKey = "(none)"
+        Me.ExplanationQuestion_TextBox.Location = New System.Drawing.Point(16, 539)
+        Me.ExplanationQuestion_TextBox.Name = "ExplanationQuestion_TextBox"
+        Me.ExplanationQuestion_TextBox.Size = New System.Drawing.Size(904, 167)
+        Me.ExplanationQuestion_TextBox.TabIndex = 1340
+        Me.ExplanationQuestion_TextBox.UseMnemonic = False
+        Me.ExplanationQuestion_TextBox.Visible = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.Controls.Add(Me.GameLimitedClock_Label)
+        Me.Panel2.Location = New System.Drawing.Point(806, 411)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(116, 105)
+        Me.Panel2.TabIndex = 1342
+        Me.Panel2.Visible = False
+        '
+        'GameLimitedClock_Label
+        '
+        Me.GameLimitedClock_Label.BackColor = System.Drawing.Color.Transparent
+        Me.GameLimitedClock_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.GameLimitedClock_Label.Font = New System.Drawing.Font("Arial", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GameLimitedClock_Label.ForeColor = System.Drawing.Color.White
+        Me.GameLimitedClock_Label.ImageKey = "(none)"
+        Me.GameLimitedClock_Label.Location = New System.Drawing.Point(3, 16)
+        Me.GameLimitedClock_Label.Name = "GameLimitedClock_Label"
+        Me.GameLimitedClock_Label.Size = New System.Drawing.Size(116, 61)
+        Me.GameLimitedClock_Label.TabIndex = 1222
+        Me.GameLimitedClock_Label.Text = "30"
+        Me.GameLimitedClock_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'AtaAns1percents_Textbox
         '
@@ -1256,10 +1255,10 @@ Partial Class HostContestant
         Me.AtaAns1percents_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns1percents_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns1percents_Textbox.ImageKey = "(none)"
-        Me.AtaAns1percents_Textbox.Location = New System.Drawing.Point(608, 517)
+        Me.AtaAns1percents_Textbox.Location = New System.Drawing.Point(759, 539)
         Me.AtaAns1percents_Textbox.Name = "AtaAns1percents_Textbox"
-        Me.AtaAns1percents_Textbox.Size = New System.Drawing.Size(110, 39)
-        Me.AtaAns1percents_Textbox.TabIndex = 1339
+        Me.AtaAns1percents_Textbox.Size = New System.Drawing.Size(157, 39)
+        Me.AtaAns1percents_Textbox.TabIndex = 1350
         Me.AtaAns1percents_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.AtaAns1percents_Textbox.Visible = False
         '
@@ -1271,10 +1270,10 @@ Partial Class HostContestant
         Me.AtaAns1_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns1_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns1_Textbox.ImageKey = "(none)"
-        Me.AtaAns1_Textbox.Location = New System.Drawing.Point(16, 517)
+        Me.AtaAns1_Textbox.Location = New System.Drawing.Point(12, 539)
         Me.AtaAns1_Textbox.Name = "AtaAns1_Textbox"
-        Me.AtaAns1_Textbox.Size = New System.Drawing.Size(594, 39)
-        Me.AtaAns1_Textbox.TabIndex = 1338
+        Me.AtaAns1_Textbox.Size = New System.Drawing.Size(748, 39)
+        Me.AtaAns1_Textbox.TabIndex = 1349
         Me.AtaAns1_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AtaAns1_Textbox.UseMnemonic = False
         Me.AtaAns1_Textbox.Visible = False
@@ -1287,10 +1286,10 @@ Partial Class HostContestant
         Me.AtaAns2percents_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns2percents_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns2percents_Textbox.ImageKey = "(none)"
-        Me.AtaAns2percents_Textbox.Location = New System.Drawing.Point(608, 555)
+        Me.AtaAns2percents_Textbox.Location = New System.Drawing.Point(759, 577)
         Me.AtaAns2percents_Textbox.Name = "AtaAns2percents_Textbox"
-        Me.AtaAns2percents_Textbox.Size = New System.Drawing.Size(110, 39)
-        Me.AtaAns2percents_Textbox.TabIndex = 1337
+        Me.AtaAns2percents_Textbox.Size = New System.Drawing.Size(157, 39)
+        Me.AtaAns2percents_Textbox.TabIndex = 1348
         Me.AtaAns2percents_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.AtaAns2percents_Textbox.Visible = False
         '
@@ -1302,10 +1301,10 @@ Partial Class HostContestant
         Me.AtaAns2_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns2_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns2_Textbox.ImageKey = "(none)"
-        Me.AtaAns2_Textbox.Location = New System.Drawing.Point(16, 555)
+        Me.AtaAns2_Textbox.Location = New System.Drawing.Point(12, 577)
         Me.AtaAns2_Textbox.Name = "AtaAns2_Textbox"
-        Me.AtaAns2_Textbox.Size = New System.Drawing.Size(594, 39)
-        Me.AtaAns2_Textbox.TabIndex = 1336
+        Me.AtaAns2_Textbox.Size = New System.Drawing.Size(748, 39)
+        Me.AtaAns2_Textbox.TabIndex = 1347
         Me.AtaAns2_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AtaAns2_Textbox.UseMnemonic = False
         Me.AtaAns2_Textbox.Visible = False
@@ -1318,10 +1317,10 @@ Partial Class HostContestant
         Me.AtaAns3percents_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns3percents_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns3percents_Textbox.ImageKey = "(none)"
-        Me.AtaAns3percents_Textbox.Location = New System.Drawing.Point(608, 593)
+        Me.AtaAns3percents_Textbox.Location = New System.Drawing.Point(759, 615)
         Me.AtaAns3percents_Textbox.Name = "AtaAns3percents_Textbox"
-        Me.AtaAns3percents_Textbox.Size = New System.Drawing.Size(110, 39)
-        Me.AtaAns3percents_Textbox.TabIndex = 1335
+        Me.AtaAns3percents_Textbox.Size = New System.Drawing.Size(157, 39)
+        Me.AtaAns3percents_Textbox.TabIndex = 1346
         Me.AtaAns3percents_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.AtaAns3percents_Textbox.Visible = False
         '
@@ -1333,10 +1332,10 @@ Partial Class HostContestant
         Me.AtaAns3_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns3_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns3_Textbox.ImageKey = "(none)"
-        Me.AtaAns3_Textbox.Location = New System.Drawing.Point(16, 593)
+        Me.AtaAns3_Textbox.Location = New System.Drawing.Point(12, 615)
         Me.AtaAns3_Textbox.Name = "AtaAns3_Textbox"
-        Me.AtaAns3_Textbox.Size = New System.Drawing.Size(594, 39)
-        Me.AtaAns3_Textbox.TabIndex = 1334
+        Me.AtaAns3_Textbox.Size = New System.Drawing.Size(748, 39)
+        Me.AtaAns3_Textbox.TabIndex = 1345
         Me.AtaAns3_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AtaAns3_Textbox.UseMnemonic = False
         Me.AtaAns3_Textbox.Visible = False
@@ -1349,10 +1348,10 @@ Partial Class HostContestant
         Me.AtaAns4percents_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns4percents_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns4percents_Textbox.ImageKey = "(none)"
-        Me.AtaAns4percents_Textbox.Location = New System.Drawing.Point(608, 631)
+        Me.AtaAns4percents_Textbox.Location = New System.Drawing.Point(759, 653)
         Me.AtaAns4percents_Textbox.Name = "AtaAns4percents_Textbox"
-        Me.AtaAns4percents_Textbox.Size = New System.Drawing.Size(110, 39)
-        Me.AtaAns4percents_Textbox.TabIndex = 1333
+        Me.AtaAns4percents_Textbox.Size = New System.Drawing.Size(157, 39)
+        Me.AtaAns4percents_Textbox.TabIndex = 1344
         Me.AtaAns4percents_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.AtaAns4percents_Textbox.Visible = False
         '
@@ -1364,28 +1363,28 @@ Partial Class HostContestant
         Me.AtaAns4_Textbox.Font = New System.Drawing.Font("Arial", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtaAns4_Textbox.ForeColor = System.Drawing.Color.White
         Me.AtaAns4_Textbox.ImageKey = "(none)"
-        Me.AtaAns4_Textbox.Location = New System.Drawing.Point(16, 631)
+        Me.AtaAns4_Textbox.Location = New System.Drawing.Point(12, 653)
         Me.AtaAns4_Textbox.Name = "AtaAns4_Textbox"
-        Me.AtaAns4_Textbox.Size = New System.Drawing.Size(594, 39)
-        Me.AtaAns4_Textbox.TabIndex = 1332
+        Me.AtaAns4_Textbox.Size = New System.Drawing.Size(748, 39)
+        Me.AtaAns4_Textbox.TabIndex = 1343
         Me.AtaAns4_Textbox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AtaAns4_Textbox.UseMnemonic = False
         Me.AtaAns4_Textbox.Visible = False
         '
-        'ExplanationQuestion_TextBox
+        'PAFClock_Label
         '
-        Me.ExplanationQuestion_TextBox.BackColor = System.Drawing.Color.Transparent
-        Me.ExplanationQuestion_TextBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ExplanationQuestion_TextBox.Font = New System.Drawing.Font("Arial", 20.0!)
-        Me.ExplanationQuestion_TextBox.ForeColor = System.Drawing.Color.White
-        Me.ExplanationQuestion_TextBox.ImageKey = "(none)"
-        Me.ExplanationQuestion_TextBox.Location = New System.Drawing.Point(16, 516)
-        Me.ExplanationQuestion_TextBox.Name = "ExplanationQuestion_TextBox"
-        Me.ExplanationQuestion_TextBox.Size = New System.Drawing.Size(702, 190)
-        Me.ExplanationQuestion_TextBox.TabIndex = 1340
-        Me.ExplanationQuestion_TextBox.Text = "            "
-        Me.ExplanationQuestion_TextBox.UseMnemonic = False
-        Me.ExplanationQuestion_TextBox.Visible = False
+        Me.PAFClock_Label.BackColor = System.Drawing.Color.Transparent
+        Me.PAFClock_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.PAFClock_Label.Font = New System.Drawing.Font("Arial", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PAFClock_Label.ForeColor = System.Drawing.Color.White
+        Me.PAFClock_Label.ImageKey = "(none)"
+        Me.PAFClock_Label.Location = New System.Drawing.Point(309, 539)
+        Me.PAFClock_Label.Name = "PAFClock_Label"
+        Me.PAFClock_Label.Size = New System.Drawing.Size(308, 76)
+        Me.PAFClock_Label.TabIndex = 1351
+        Me.PAFClock_Label.Text = "30"
+        Me.PAFClock_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.PAFClock_Label.Visible = False
         '
         'HostContestant
         '
@@ -1394,8 +1393,8 @@ Partial Class HostContestant
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1366, 749)
-        Me.Controls.Add(Me.ExplanationQuestion_TextBox)
+        Me.ClientSize = New System.Drawing.Size(1350, 729)
+        Me.Controls.Add(Me.PAFClock_Label)
         Me.Controls.Add(Me.AtaAns1percents_Textbox)
         Me.Controls.Add(Me.AtaAns1_Textbox)
         Me.Controls.Add(Me.AtaAns2percents_Textbox)
@@ -1404,6 +1403,8 @@ Partial Class HostContestant
         Me.Controls.Add(Me.AtaAns3_Textbox)
         Me.Controls.Add(Me.AtaAns4percents_Textbox)
         Me.Controls.Add(Me.AtaAns4_Textbox)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.ExplanationQuestion_TextBox)
         Me.Controls.Add(Me.ProducersChat_TextBox)
         Me.Controls.Add(Me.fallSumePanel)
         Me.Controls.Add(Me.incorrectSumePanel)
@@ -1411,8 +1412,6 @@ Partial Class HostContestant
         Me.Controls.Add(Me.sumePanel)
         Me.Controls.Add(Me.awayPanel)
         Me.Controls.Add(Me.ContestantName_Panel)
-        Me.Controls.Add(Me.PAFClock_Label)
-        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PronunciationHelp_Textbox)
         Me.Controls.Add(Me.Question_PlaceGfx)
         Me.Controls.Add(Me.PictureBox4)
@@ -1439,7 +1438,6 @@ Partial Class HostContestant
         CType(Me.Lifeline2_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Lifeline1_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContestantName_Panel.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
         Me.Question_PlaceGfx.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Answer2_PlaceGfx.ResumeLayout(False)
@@ -1467,6 +1465,7 @@ Partial Class HostContestant
         Me.fallSumePanel.ResumeLayout(False)
         Me.fallSumePanel.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1511,10 +1510,7 @@ Partial Class HostContestant
     Friend WithEvents Question_Label As Label
     Friend WithEvents PronunciationHelp_Textbox As Label
     Friend WithEvents Correct_Box As TextBox
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents GameLimitedClock_Label As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents PAFClock_Label As Label
     Friend WithEvents ContestantName_Label As Label
     Friend WithEvents ContestantName_Panel As Panel
     Friend WithEvents Timer_DirectMessageBlink As Timer
@@ -1553,6 +1549,9 @@ Partial Class HostContestant
     Friend WithEvents Lozenge_3 As Label
     Friend WithEvents Lozenge_2 As Label
     Friend WithEvents Lozenge_1 As Label
+    Friend WithEvents ExplanationQuestion_TextBox As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents GameLimitedClock_Label As Label
     Friend WithEvents AtaAns1percents_Textbox As Label
     Friend WithEvents AtaAns1_Textbox As Label
     Friend WithEvents AtaAns2percents_Textbox As Label
@@ -1561,5 +1560,5 @@ Partial Class HostContestant
     Friend WithEvents AtaAns3_Textbox As Label
     Friend WithEvents AtaAns4percents_Textbox As Label
     Friend WithEvents AtaAns4_Textbox As Label
-    Friend WithEvents ExplanationQuestion_TextBox As Label
+    Friend WithEvents PAFClock_Label As Label
 End Class

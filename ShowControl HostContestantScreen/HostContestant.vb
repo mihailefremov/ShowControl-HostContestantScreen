@@ -795,9 +795,9 @@ Public Class HostContestant
     Friend Sub InfoAfterFinalAnswerFire(Optional IsDoubleDip As Boolean = False)
         If hostContestantData._isHost Then Correct_Box.Visible = True
         If hostContestantData._finalAnswer = hostContestantData._correctAnswer Then
-            Correct_Box.BackColor = System.Drawing.Color.FromArgb(0, 192, 0)
+            Correct_Box.BackColor = Color.Green ' System.Drawing.Color.FromArgb(0, 192, 0)
         Else
-            Correct_Box.BackColor = System.Drawing.Color.FromArgb(219, 23, 24)
+            Correct_Box.BackColor = Color.Red ' System.Drawing.Color.FromArgb(219, 23, 24)
 
         End If
         If IsDoubleDip And (hostContestantData._finalAnswer <> hostContestantData._correctAnswer) Then
@@ -1253,6 +1253,10 @@ Public Class HostContestant
         ExplanationQuestion_TextBox.Font = myFont
 
         GUIHelpers.FitTextInsideControl(ExplanationQuestion_TextBox, myFont)
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)
+
     End Sub
 
     Public Sub ConfigureLocalVersion()

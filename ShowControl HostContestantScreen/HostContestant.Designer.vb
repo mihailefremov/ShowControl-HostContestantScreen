@@ -708,7 +708,7 @@ Partial Class HostContestant
         'Correct_Box
         '
         Me.Correct_Box.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.Correct_Box.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Correct_Box.BackColor = System.Drawing.Color.Gray
         Me.Correct_Box.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Correct_Box.Font = New System.Drawing.Font("Arial", 33.25!)
         Me.Correct_Box.ForeColor = System.Drawing.Color.White
@@ -783,13 +783,14 @@ Partial Class HostContestant
         '
         Me.Question_Label.BackColor = System.Drawing.Color.Transparent
         Me.Question_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Question_Label.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.Question_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.Question_Label.ForeColor = System.Drawing.Color.White
         Me.Question_Label.ImageKey = "(none)"
-        Me.Question_Label.Location = New System.Drawing.Point(5, 5)
+        Me.Question_Label.Location = New System.Drawing.Point(21, 5)
         Me.Question_Label.Name = "Question_Label"
-        Me.Question_Label.Size = New System.Drawing.Size(1240, 95)
+        Me.Question_Label.Size = New System.Drawing.Size(1210, 95)
         Me.Question_Label.TabIndex = 1222
+        Me.Question_Label.Text = "        "
         Me.Question_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Question_Label.UseMnemonic = False
         '
@@ -820,14 +821,14 @@ Partial Class HostContestant
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.AnswerB_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerB_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerB_Label.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.AnswerB_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerB_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerB_Label.ImageKey = "(none)"
-        Me.AnswerB_Label.Location = New System.Drawing.Point(61, 9)
+        Me.AnswerB_Label.Location = New System.Drawing.Point(61, 7)
         Me.AnswerB_Label.Name = "AnswerB_Label"
-        Me.AnswerB_Label.Size = New System.Drawing.Size(574, 41)
+        Me.AnswerB_Label.Size = New System.Drawing.Size(530, 45)
         Me.AnswerB_Label.TabIndex = 1222
-        Me.AnswerB_Label.Text = "               "
+        Me.AnswerB_Label.Text = "        "
         Me.AnswerB_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AnswerB_Label.UseMnemonic = False
         '
@@ -864,14 +865,14 @@ Partial Class HostContestant
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.AnswerA_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerA_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerA_Label.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.AnswerA_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerA_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerA_Label.ImageKey = "(none)"
-        Me.AnswerA_Label.Location = New System.Drawing.Point(61, 9)
+        Me.AnswerA_Label.Location = New System.Drawing.Point(61, 7)
         Me.AnswerA_Label.Name = "AnswerA_Label"
-        Me.AnswerA_Label.Size = New System.Drawing.Size(574, 41)
+        Me.AnswerA_Label.Size = New System.Drawing.Size(530, 45)
         Me.AnswerA_Label.TabIndex = 1222
-        Me.AnswerA_Label.Text = "               "
+        Me.AnswerA_Label.Text = "        "
         Me.AnswerA_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AnswerA_Label.UseMnemonic = False
         '
@@ -917,14 +918,14 @@ Partial Class HostContestant
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.AnswerD_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerD_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerD_Label.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.AnswerD_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerD_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerD_Label.ImageKey = "(none)"
-        Me.AnswerD_Label.Location = New System.Drawing.Point(61, 9)
+        Me.AnswerD_Label.Location = New System.Drawing.Point(61, 7)
         Me.AnswerD_Label.Name = "AnswerD_Label"
-        Me.AnswerD_Label.Size = New System.Drawing.Size(574, 41)
+        Me.AnswerD_Label.Size = New System.Drawing.Size(530, 45)
         Me.AnswerD_Label.TabIndex = 1222
-        Me.AnswerD_Label.Text = "               "
+        Me.AnswerD_Label.Text = "        "
         Me.AnswerD_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AnswerD_Label.UseMnemonic = False
         '
@@ -961,14 +962,14 @@ Partial Class HostContestant
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.AnswerC_Label.BackColor = System.Drawing.Color.Transparent
         Me.AnswerC_Label.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.AnswerC_Label.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.AnswerC_Label.Font = New System.Drawing.Font("Arial", 30.0!)
         Me.AnswerC_Label.ForeColor = System.Drawing.Color.White
         Me.AnswerC_Label.ImageKey = "(none)"
-        Me.AnswerC_Label.Location = New System.Drawing.Point(61, 9)
+        Me.AnswerC_Label.Location = New System.Drawing.Point(61, 7)
         Me.AnswerC_Label.Name = "AnswerC_Label"
-        Me.AnswerC_Label.Size = New System.Drawing.Size(574, 41)
+        Me.AnswerC_Label.Size = New System.Drawing.Size(530, 45)
         Me.AnswerC_Label.TabIndex = 1222
-        Me.AnswerC_Label.Text = "               "
+        Me.AnswerC_Label.Text = "        "
         Me.AnswerC_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AnswerC_Label.UseMnemonic = False
         '

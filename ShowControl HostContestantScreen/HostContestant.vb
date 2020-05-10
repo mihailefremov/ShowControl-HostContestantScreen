@@ -795,10 +795,9 @@ Public Class HostContestant
     Friend Sub InfoAfterFinalAnswerFire(Optional IsDoubleDip As Boolean = False)
         If hostContestantData._isHost Then Correct_Box.Visible = True
         If hostContestantData._finalAnswer = hostContestantData._correctAnswer Then
-            Correct_Box.BackColor = Color.Green ' System.Drawing.Color.FromArgb(0, 192, 0)
+            Correct_Box.BackColor = GUIDesignerPropertisContext.GreenColorBox
         Else
-            Correct_Box.BackColor = Color.Red ' System.Drawing.Color.FromArgb(219, 23, 24)
-
+            Correct_Box.BackColor = GUIDesignerPropertisContext.RedColorBox
         End If
         If IsDoubleDip And (hostContestantData._finalAnswer <> hostContestantData._correctAnswer) Then
             Correct_Box.Text = ""
@@ -882,7 +881,7 @@ Public Class HostContestant
 
     Friend Sub InfoAfterFinalAnswerDissolve()
         Correct_Box.Visible = False
-        Correct_Box.BackColor = Color.Navy
+        Correct_Box.BackColor = GUIDesignerPropertisContext.GrayColorBox
         Correct_Box.Text = ""
     End Sub
 
@@ -1082,6 +1081,7 @@ Public Class HostContestant
                 End If
             Next
         Next
+        hostContestantData.currentSecondMilestone = secondMilestone
         If Not IsNumeric(secondMilestone) Then Return
         If secondMilestone <= 0 Then Return
         Label = "Q_" + secondMilestone.ToString
@@ -1090,7 +1090,6 @@ Public Class HostContestant
                 lb.ForeColor = Color.White
             End If
         Next
-        hostContestantData.currentSecondMilestone = secondMilestone
     End Sub
 
     Private Sub DataSetValues(Configuration As Xml2CSharp.WWTBAMCONFIGURATIONDATA)

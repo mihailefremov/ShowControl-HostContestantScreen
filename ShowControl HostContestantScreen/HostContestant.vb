@@ -880,7 +880,7 @@ Public Class HostContestant
     End Sub
 
     Friend Sub InfoAfterFinalAnswerDissolve()
-        Correct_Box.Visible = False
+        'Correct_Box.Visible = False
         Correct_Box.BackColor = GUIDesignerPropertisContext.GrayColorBox
         Correct_Box.Text = ""
     End Sub

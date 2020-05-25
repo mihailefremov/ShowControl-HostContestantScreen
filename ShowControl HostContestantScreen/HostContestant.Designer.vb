@@ -747,7 +747,7 @@ Partial Class HostContestant
         Me.ContestantName_Panel.BackgroundImage = CType(resources.GetObject("ContestantName_Panel.BackgroundImage"), System.Drawing.Image)
         Me.ContestantName_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ContestantName_Panel.Controls.Add(Me.ContestantName_Label)
-        Me.ContestantName_Panel.Location = New System.Drawing.Point(19, 717)
+        Me.ContestantName_Panel.Location = New System.Drawing.Point(19, 709)
         Me.ContestantName_Panel.Name = "ContestantName_Panel"
         Me.ContestantName_Panel.Size = New System.Drawing.Size(903, 41)
         Me.ContestantName_Panel.TabIndex = 1306

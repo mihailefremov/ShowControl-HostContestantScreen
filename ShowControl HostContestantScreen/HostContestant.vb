@@ -503,21 +503,22 @@ Public Class HostContestant
         End If
 
         If Not String.Equals(OneTimeMessageGamePlay.OTHER.LASTCHANGE, OneTimeOtherLastChange, StringComparison.OrdinalIgnoreCase) Then
-            'If String.Equals(OneTimeMessageGamePlay.OTHER.EXECUTED, "NO", StringComparison.OrdinalIgnoreCase) Then
-            '    If String.Equals(OneTimeMessageGamePlay.OTHER.STATE, "TODO-SOMETHING1", StringComparison.OrdinalIgnoreCase) Then
-            '    ElseIf String.Equals(OneTimeMessageGamePlay.OTHER.STATE, "TODO-SOMETHING2", StringComparison.OrdinalIgnoreCase) Then
-            '    End If
-            '    OneTimeOtherLastChange = OneTimeMessageGamePlay.OTHER.LASTCHANGE
-            '    HttpApiRequests.GetPostRequests.Get($"https://{My.Settings.IPAddress}/wwtbam-state/PostOTMessageExecution.php?MessageType=Other")
-            'End If
+            If String.Equals(OneTimeMessageGamePlay.OTHER.EXECUTED, "NO", StringComparison.OrdinalIgnoreCase) Then
+                If String.Equals(OneTimeMessageGamePlay.OTHER.STATE, "CONFIGURATIONRESET", StringComparison.OrdinalIgnoreCase) Then
+                    ConfigureLocalVersion(True)
+                ElseIf String.Equals(OneTimeMessageGamePlay.OTHER.STATE, "TODO-SOMETHING2", StringComparison.OrdinalIgnoreCase) Then
+                End If
+                OneTimeOtherLastChange = OneTimeMessageGamePlay.OTHER.LASTCHANGE
+                HttpApiRequests.GetPostRequests.Get($"https://{My.Settings.IPAddress}/wwtbam-state/PostOTMessageExecution.php?MessageType=Other")
+            End If
         End If
 
     End Sub
 
 #End Region
 
-    Private Sub LifelineStateSet(LifelinesState As String)
-        If String.Compare(hostContestantData.lifelinesState, LifelinesState, True) <> 0 Then
+    Private Sub LifelineStateSet(LifelinesState As String, Optional ForceSet As Boolean = False)
+        If (String.Compare(hostContestantData.lifelinesState, LifelinesState, True) <> 0) OrElse ForceSet Then
             Dim LifelineStateArray As String() = LifelinesState.Split(";")
             If LifelineStateArray.Count = 4 Then
                 For i As Integer = 1 To LifelineStateArray.Length
@@ -1039,19 +1040,19 @@ Public Class HostContestant
 
             If maxVotePercentage = 0 Then Return
 
-            If maxVotePercentage.Equals(ataVotesArray(0)) Then
+            If maxVotePercentage = ataVotesArray(0) Then
                 AtaAns1_Textbox.BackColor = Color.DarkOrange
                 AtaAns1percents_Textbox.BackColor = Color.DarkOrange
             End If
-            If maxVotePercentage.Equals(ataVotesArray(1)) Then
+            If maxVotePercentage = ataVotesArray(1) Then
                 AtaAns2_Textbox.BackColor = Color.DarkOrange
                 AtaAns2percents_Textbox.BackColor = Color.DarkOrange
             End If
-            If maxVotePercentage.Equals(ataVotesArray(2)) Then
+            If maxVotePercentage = ataVotesArray(2) Then
                 AtaAns3_Textbox.BackColor = Color.DarkOrange
                 AtaAns3percents_Textbox.BackColor = Color.DarkOrange
             End If
-            If maxVotePercentage.Equals(ataVotesArray(3)) Then
+            If maxVotePercentage = ataVotesArray(3) Then
                 AtaAns4_Textbox.BackColor = Color.DarkOrange
                 AtaAns4percents_Textbox.BackColor = Color.DarkOrange
             End If
@@ -1193,19 +1194,26 @@ Public Class HostContestant
     Private Sub PAFFire()
         PAFClock_Label.Text = "30"
         PAFClock_Label.Visible = True
+        hostContestantData.paf = "START"
         Timer_ClockSecondDrop.Start()
     End Sub
 
     Private Sub PAFAbort()
         Timer_ClockSecondDrop.Stop()
         PAFClock_Label.Visible = False
+        hostContestantData.paf = "ABORT"
+    End Sub
+
+    Private Sub PAFAutoEnd()
+        PAFAbort()
+        hostContestantData.paf = "END"
     End Sub
 
     Private Sub Timer_ClockSecondDrop_Tick(sender As Object, e As EventArgs) Handles Timer_ClockSecondDrop.Tick
         If Val(PAFClock_Label.Text) > 0 Then
             PAFClock_Label.Text = Val(PAFClock_Label.Text) - 1
         Else
-            PAFAbort()
+            PAFAutoEnd()
         End If
     End Sub
     Public Sub EnableGUIIfHost()
@@ -1258,9 +1266,9 @@ Public Class HostContestant
 
     End Sub
 
-    Public Sub ConfigureLocalVersion()
+    Public Sub ConfigureLocalVersion(Optional ForceConfigure As Boolean = False)
 
-        If hostContestantData.lastTimeSetMoneyTree < DateTime.Today Then
+        If (hostContestantData.lastTimeSetMoneyTree < DateTime.Today) OrElse ForceConfigure Then
             Dim Configuration As String = HttpApiRequests.GetPostRequests.Get($"https://{My.Settings.IPAddress}/wwtbam-state/GetConfigurationData.php")
 
             Dim configSerializer As Xml.Serialization.XmlSerializer = New Xml.Serialization.XmlSerializer(GetType(Xml2CSharp.WWTBAMCONFIGURATIONDATA))
@@ -1275,6 +1283,7 @@ Public Class HostContestant
             End Try
 
             DataSetValues(WwtbamConfiguration)
+            LifelineStateSet(hostContestantData.lifelinesState, ForceSet:=True)
         End If
 
     End Sub

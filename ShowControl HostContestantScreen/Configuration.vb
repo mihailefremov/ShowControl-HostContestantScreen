@@ -690,7 +690,7 @@
                 HostContestant.PronunciationHelp_Textbox.Location = New System.Drawing.Point(17, 257)
                 HostContestant.Correct_Box.Location = New System.Drawing.Point(743, 294)
                 HostContestant.Label1.Location = New System.Drawing.Point(5, 16)
-                HostContestant.ContestantName_Panel.Location = New System.Drawing.Point(19, 717)
+                HostContestant.ContestantName_Panel.Location = New System.Drawing.Point(19, 709)
                 HostContestant.ContestantName_Label.Location = New System.Drawing.Point(8, 0)
                 HostContestant.Question_PlaceGfx.Location = New System.Drawing.Point(62, 11)
                 HostContestant.Question_Label.Location = New System.Drawing.Point(5, 5)

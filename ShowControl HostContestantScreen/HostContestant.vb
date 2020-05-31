@@ -1262,8 +1262,23 @@ Public Class HostContestant
         GUIHelpers.FitTextInsideControl(ExplanationQuestion_TextBox, myFont)
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)
+    Private Sub Answer1Final_Click(sender As Object, e As EventArgs) Handles AnswerA_Label.Click, MarkA_Label.Click, Answer1_PlaceGfx.Click
+        ContestantFinalClick(1)
+    End Sub
+    Private Sub Answer2Final_Click(sender As Object, e As EventArgs) Handles AnswerB_Label.Click, MarkB_Label.Click, Answer2_PlaceGfx.Click
+        ContestantFinalClick(2)
+    End Sub
+    Private Sub Answer3Final_Click(sender As Object, e As EventArgs) Handles AnswerC_Label.Click, MarkC_Label.Click, Answer3_PlaceGfx.Click
+        ContestantFinalClick(3)
+    End Sub
+    Private Sub Answer4Final_Click(sender As Object, e As EventArgs) Handles AnswerD_Label.Click, MarkD_Label.Click, Answer4_PlaceGfx.Click
+        ContestantFinalClick(4)
+    End Sub
 
+    Private Sub ContestantFinalClick(Answer As Integer)
+        If (Not hostContestantData._isHost) Then
+            Dim FinalAnswerStr As String = HttpApiRequests.GetPostRequests.Get($"https://{My.Settings.IPAddress}/wwtbam-state/PostContestantClickData.php?ClickType=FinalAnswer&ClickValue=" + Answer)
+        End If
     End Sub
 
     Public Sub ConfigureLocalVersion(Optional ForceConfigure As Boolean = False)

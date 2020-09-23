@@ -1139,15 +1139,15 @@ Public Class HostContestant
 
         Dim AnswerMarks As Char() = Configuration.ANSWERMARKS.ToCharArray
 
-        'hostContestantData._mark1Label = GetValueStringBetweenTags(Configuration, "<MARK1LABEL>", "</MARK1LABEL>")
-        'hostContestantData._mark2Label = GetValueStringBetweenTags(Configuration, "<MARK2LABEL>", "</MARK2LABEL>")
-        'hostContestantData._mark3Label = GetValueStringBetweenTags(Configuration, "<MARK3LABEL>", "</MARK3LABEL>")
-        'hostContestantData._mark4Label = GetValueStringBetweenTags(Configuration, "<MARK4LABEL>", "</MARK4LABEL>")
+        hostContestantData._mark1Label = IIf(AnswerMarks(0) = Nothing, "A", AnswerMarks(0))
+        hostContestantData._mark2Label = IIf(AnswerMarks(1) = Nothing, "B", AnswerMarks(1))
+        hostContestantData._mark3Label = IIf(AnswerMarks(2) = Nothing, "C", AnswerMarks(2))
+        hostContestantData._mark4Label = IIf(AnswerMarks(3) = Nothing, "D", AnswerMarks(3))
 
-        MarkA_Label.Text = AnswerMarks(0) + ":"
-        MarkB_Label.Text = AnswerMarks(1) + ":"
-        MarkC_Label.Text = AnswerMarks(2) + ":"
-        MarkD_Label.Text = AnswerMarks(3) + ":"
+        MarkA_Label.Text = hostContestantData._mark1Label + ":"
+        MarkB_Label.Text = hostContestantData._mark2Label + ":"
+        MarkC_Label.Text = hostContestantData._mark3Label + ":"
+        MarkD_Label.Text = hostContestantData._mark4Label + ":"
 
         hostContestantData._totalPrizeWonLocalizedMark = Configuration.TPWON
 

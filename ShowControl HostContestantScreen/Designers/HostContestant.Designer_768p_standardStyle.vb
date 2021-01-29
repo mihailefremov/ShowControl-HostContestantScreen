@@ -1536,7 +1536,6 @@ Partial Class HostContestant
         Me.PerformLayout()
 
     End Sub
-
     Friend WithEvents MoneyTreePanel As Panel
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Q_4 As Label
@@ -1564,6 +1563,9 @@ Partial Class HostContestant
     Friend WithEvents Answer3_PlaceGfx As Panel
     Friend WithEvents AnswerC_Label As Label
     Friend WithEvents MarkC_Label As Label
+    Friend WithEvents Answer2_PlaceGfx As Panel
+    Friend WithEvents AnswerB_Label As Label
+    Friend WithEvents MarkB_Label As Label
     Friend WithEvents Answer1_PlaceGfx As Panel
     Friend WithEvents AnswerA_Label As Label
     Friend WithEvents MarkA_Label As Label
@@ -1611,6 +1613,8 @@ Partial Class HostContestant
     Friend WithEvents Lozenge_2 As Label
     Friend WithEvents Lozenge_1 As Label
     Friend WithEvents ExplanationQuestion_TextBox As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents GameLimitedClock_Label As Label
     Friend WithEvents AtaAns1percents_Textbox As Label
     Friend WithEvents AtaAns1_Textbox As Label
     Friend WithEvents AtaAns2percents_Textbox As Label
@@ -1619,20 +1623,13 @@ Partial Class HostContestant
     Friend WithEvents AtaAns3_Textbox As Label
     Friend WithEvents AtaAns4percents_Textbox As Label
     Friend WithEvents AtaAns4_Textbox As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents GameLimitedClock_Label As Label
     Friend WithEvents PAFClock_Label As Label
     Friend WithEvents LineBeforeAnswer1_PictureBox As PictureBox
-    Friend WithEvents LineBeforeAnswer3_PictureBox As PictureBox
     Friend WithEvents LineBeforeQhex_Picturebox As PictureBox
+    Friend WithEvents LineBeforeAnswer3_PictureBox As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents MarkB_Label As Label
-    Friend WithEvents AnswerB_Label As Label
-    Friend WithEvents Answer2_PlaceGfx As Panel
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
 End Class

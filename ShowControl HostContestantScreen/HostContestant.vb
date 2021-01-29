@@ -16,6 +16,19 @@ Public Class HostContestant
     Public ThreadGameStateListener As New Thread(AddressOf ListenAndProcessLatestGamePlayData)
     Public ThreadOneTimeMessageListener As New Thread(AddressOf ListenAndProcessOneTimeMessages)
 
+    Public Sub New()
+
+        ' This call is required by the designer.
+        If GUIDesignerPropertisContext.CurrentResolution = GUIDesignerPropertisContext.Resolution.HDReady Then
+            InitializeComponent_HdReady()
+        ElseIf GUIDesignerPropertisContext.CurrentResolution = GUIDesignerPropertisContext.Resolution.FullHD Then
+            Me.InitializeComponent_1080pForm()
+        End If
+
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
+
     Public Overloads Sub Show(isHost As Boolean, Resolution As String)
         hostContestantData._isHost = isHost
         GUIDesignerPropertisContext.SetDesignerData(Resolution)
@@ -23,6 +36,7 @@ Public Class HostContestant
     End Sub
 
     Private Sub HostContestant_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         EnableGUIIfHost()
         ConfigureLocalVersion()
 

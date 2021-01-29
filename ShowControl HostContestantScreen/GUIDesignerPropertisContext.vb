@@ -15,9 +15,17 @@
     Public Shared RedColorBox As Color = System.Drawing.Color.FromArgb(219, 23, 24)
     Public Shared GrayColorBox As Color = Color.Gray
 
-    Shared Sub SetDesignerData(ScreenResolution As String)
-        Select Case ScreenResolution.ToUpper.Trim
-            Case "1080", "1080P", "FULLHD", "1920X1080"
+    Enum Resolution
+        FullHD = 1
+        HDReady = 2
+    End Enum
+
+    Public Shared CurrentResolution As Resolution
+
+    Shared Sub SetDesignerData(ScreenResolution As Resolution)
+        Select Case ScreenResolution
+            Case Resolution.FullHD
+
                 QuestionFontSize = 38
                 AnswerFontSize = 38
                 ExplanationFontSize = 32
@@ -27,7 +35,8 @@
                 QuestionFontCutOff = 1490
                 AnswerFontCutOff = 640
 
-            Case "768", "720P", "HDREADY", "1366X768", "1280X720"
+            Case Resolution.HDReady
+
                 QuestionFontSize = 30
                 AnswerFontSize = 30
                 ExplanationFontSize = 20

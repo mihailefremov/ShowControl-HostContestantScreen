@@ -70,18 +70,21 @@ Partial Class HostContestant
         Me.ContestantName_Label = New System.Windows.Forms.Label()
         Me.Question_PlaceGfx = New System.Windows.Forms.Panel()
         Me.Question_Label = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Answer2_PlaceGfx = New System.Windows.Forms.Panel()
         Me.AnswerB_Label = New System.Windows.Forms.Label()
         Me.MarkB_Label = New System.Windows.Forms.Label()
         Me.Answer1_PlaceGfx = New System.Windows.Forms.Panel()
         Me.AnswerA_Label = New System.Windows.Forms.Label()
         Me.MarkA_Label = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Answer4_PlaceGfx = New System.Windows.Forms.Panel()
         Me.AnswerD_Label = New System.Windows.Forms.Label()
         Me.MarkD_Label = New System.Windows.Forms.Label()
         Me.Answer3_PlaceGfx = New System.Windows.Forms.Panel()
         Me.AnswerC_Label = New System.Windows.Forms.Label()
         Me.MarkC_Label = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Timer_ClockSecondDrop = New System.Windows.Forms.Timer(Me.components)
         Me.awayPanel = New System.Windows.Forms.Panel()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
@@ -112,14 +115,6 @@ Partial Class HostContestant
         Me.AtaAns4percents_Textbox = New System.Windows.Forms.Label()
         Me.AtaAns4_Textbox = New System.Windows.Forms.Label()
         Me.PAFClock_Label = New System.Windows.Forms.Label()
-        Me.LineBeforeAnswer1_PictureBox = New System.Windows.Forms.PictureBox()
-        Me.LineBeforeQhex_Picturebox = New System.Windows.Forms.PictureBox()
-        Me.LineBeforeAnswer3_PictureBox = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.MoneyTreePanel.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Lifeline4_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -128,10 +123,13 @@ Partial Class HostContestant
         CType(Me.Lifeline1_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContestantName_Panel.SuspendLayout()
         Me.Question_PlaceGfx.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Answer2_PlaceGfx.SuspendLayout()
         Me.Answer1_PlaceGfx.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Answer4_PlaceGfx.SuspendLayout()
         Me.Answer3_PlaceGfx.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.awayPanel.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sumePanel.SuspendLayout()
@@ -143,14 +141,6 @@ Partial Class HostContestant
         Me.fallSumePanel.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.LineBeforeAnswer1_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LineBeforeQhex_Picturebox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LineBeforeAnswer3_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MoneyTreePanel
@@ -784,9 +774,9 @@ Partial Class HostContestant
         Me.Question_PlaceGfx.BackgroundImage = CType(resources.GetObject("Question_PlaceGfx.BackgroundImage"), System.Drawing.Image)
         Me.Question_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Question_PlaceGfx.Controls.Add(Me.Question_Label)
-        Me.Question_PlaceGfx.Location = New System.Drawing.Point(46, 11)
+        Me.Question_PlaceGfx.Location = New System.Drawing.Point(62, 11)
         Me.Question_PlaceGfx.Name = "Question_PlaceGfx"
-        Me.Question_PlaceGfx.Size = New System.Drawing.Size(1266, 105)
+        Me.Question_PlaceGfx.Size = New System.Drawing.Size(1250, 105)
         Me.Question_PlaceGfx.TabIndex = 1297
         '
         'Question_Label
@@ -804,6 +794,15 @@ Partial Class HostContestant
         Me.Question_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Question_Label.UseMnemonic = False
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox4.Location = New System.Drawing.Point(-2, 61)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(1376, 4)
+        Me.PictureBox4.TabIndex = 1296
+        Me.PictureBox4.TabStop = False
+        '
         'Answer2_PlaceGfx
         '
         Me.Answer2_PlaceGfx.BackColor = System.Drawing.Color.Transparent
@@ -811,7 +810,7 @@ Partial Class HostContestant
         Me.Answer2_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer2_PlaceGfx.Controls.Add(Me.AnswerB_Label)
         Me.Answer2_PlaceGfx.Controls.Add(Me.MarkB_Label)
-        Me.Answer2_PlaceGfx.Location = New System.Drawing.Point(693, 123)
+        Me.Answer2_PlaceGfx.Location = New System.Drawing.Point(693, 122)
         Me.Answer2_PlaceGfx.Name = "Answer2_PlaceGfx"
         Me.Answer2_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer2_PlaceGfx.TabIndex = 1294
@@ -855,7 +854,7 @@ Partial Class HostContestant
         Me.Answer1_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer1_PlaceGfx.Controls.Add(Me.AnswerA_Label)
         Me.Answer1_PlaceGfx.Controls.Add(Me.MarkA_Label)
-        Me.Answer1_PlaceGfx.Location = New System.Drawing.Point(71, 123)
+        Me.Answer1_PlaceGfx.Location = New System.Drawing.Point(83, 122)
         Me.Answer1_PlaceGfx.Name = "Answer1_PlaceGfx"
         Me.Answer1_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer1_PlaceGfx.TabIndex = 1293
@@ -892,6 +891,15 @@ Partial Class HostContestant
         Me.MarkA_Label.Text = "A:"
         Me.MarkA_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox3.Location = New System.Drawing.Point(-2, 150)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(1376, 4)
+        Me.PictureBox3.TabIndex = 1292
+        Me.PictureBox3.TabStop = False
+        '
         'Answer4_PlaceGfx
         '
         Me.Answer4_PlaceGfx.BackColor = System.Drawing.Color.Transparent
@@ -899,7 +907,7 @@ Partial Class HostContestant
         Me.Answer4_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer4_PlaceGfx.Controls.Add(Me.AnswerD_Label)
         Me.Answer4_PlaceGfx.Controls.Add(Me.MarkD_Label)
-        Me.Answer4_PlaceGfx.Location = New System.Drawing.Point(693, 191)
+        Me.Answer4_PlaceGfx.Location = New System.Drawing.Point(693, 190)
         Me.Answer4_PlaceGfx.Name = "Answer4_PlaceGfx"
         Me.Answer4_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer4_PlaceGfx.TabIndex = 1291
@@ -943,7 +951,7 @@ Partial Class HostContestant
         Me.Answer3_PlaceGfx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Answer3_PlaceGfx.Controls.Add(Me.AnswerC_Label)
         Me.Answer3_PlaceGfx.Controls.Add(Me.MarkC_Label)
-        Me.Answer3_PlaceGfx.Location = New System.Drawing.Point(71, 191)
+        Me.Answer3_PlaceGfx.Location = New System.Drawing.Point(83, 190)
         Me.Answer3_PlaceGfx.Name = "Answer3_PlaceGfx"
         Me.Answer3_PlaceGfx.Size = New System.Drawing.Size(600, 61)
         Me.Answer3_PlaceGfx.TabIndex = 1290
@@ -979,6 +987,15 @@ Partial Class HostContestant
         Me.MarkC_Label.TabIndex = 1220
         Me.MarkC_Label.Text = "C:"
         Me.MarkC_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox2.Location = New System.Drawing.Point(-2, 219)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(1376, 4)
+        Me.PictureBox2.TabIndex = 1289
+        Me.PictureBox2.TabStop = False
         '
         'Timer_ClockSecondDrop
         '
@@ -1370,78 +1387,6 @@ Partial Class HostContestant
         Me.PAFClock_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.PAFClock_Label.Visible = False
         '
-        'LineBeforeAnswer1_PictureBox
-        '
-        Me.LineBeforeAnswer1_PictureBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.LineBeforeAnswer1_PictureBox.Location = New System.Drawing.Point(-1, 152)
-        Me.LineBeforeAnswer1_PictureBox.Name = "LineBeforeAnswer1_PictureBox"
-        Me.LineBeforeAnswer1_PictureBox.Size = New System.Drawing.Size(76, 3)
-        Me.LineBeforeAnswer1_PictureBox.TabIndex = 1353
-        Me.LineBeforeAnswer1_PictureBox.TabStop = False
-        '
-        'LineBeforeQhex_Picturebox
-        '
-        Me.LineBeforeQhex_Picturebox.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.LineBeforeQhex_Picturebox.Location = New System.Drawing.Point(-6, 62)
-        Me.LineBeforeQhex_Picturebox.Name = "LineBeforeQhex_Picturebox"
-        Me.LineBeforeQhex_Picturebox.Size = New System.Drawing.Size(56, 4)
-        Me.LineBeforeQhex_Picturebox.TabIndex = 1354
-        Me.LineBeforeQhex_Picturebox.TabStop = False
-        '
-        'LineBeforeAnswer3_PictureBox
-        '
-        Me.LineBeforeAnswer3_PictureBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.LineBeforeAnswer3_PictureBox.Location = New System.Drawing.Point(-1, 220)
-        Me.LineBeforeAnswer3_PictureBox.Name = "LineBeforeAnswer3_PictureBox"
-        Me.LineBeforeAnswer3_PictureBox.Size = New System.Drawing.Size(76, 3)
-        Me.LineBeforeAnswer3_PictureBox.TabIndex = 1355
-        Me.LineBeforeAnswer3_PictureBox.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.PictureBox2.Location = New System.Drawing.Point(668, 152)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(30, 3)
-        Me.PictureBox2.TabIndex = 1356
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.PictureBox3.Location = New System.Drawing.Point(668, 220)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(30, 3)
-        Me.PictureBox3.TabIndex = 1357
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.PictureBox4.Location = New System.Drawing.Point(1290, 220)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(86, 3)
-        Me.PictureBox4.TabIndex = 1359
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.PictureBox6.Location = New System.Drawing.Point(1290, 152)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(86, 3)
-        Me.PictureBox6.TabIndex = 1358
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.PictureBox10.Location = New System.Drawing.Point(1307, 62)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(66, 4)
-        Me.PictureBox10.TabIndex = 1361
-        Me.PictureBox10.TabStop = False
-        '
         'HostContestant
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1450,14 +1395,6 @@ Partial Class HostContestant
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1350, 729)
-        Me.Controls.Add(Me.PictureBox10)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.LineBeforeAnswer3_PictureBox)
-        Me.Controls.Add(Me.LineBeforeQhex_Picturebox)
-        Me.Controls.Add(Me.LineBeforeAnswer1_PictureBox)
         Me.Controls.Add(Me.PAFClock_Label)
         Me.Controls.Add(Me.AtaAns1percents_Textbox)
         Me.Controls.Add(Me.AtaAns1_Textbox)
@@ -1478,10 +1415,13 @@ Partial Class HostContestant
         Me.Controls.Add(Me.ContestantName_Panel)
         Me.Controls.Add(Me.PronunciationHelp_Textbox)
         Me.Controls.Add(Me.Question_PlaceGfx)
+        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Answer2_PlaceGfx)
         Me.Controls.Add(Me.Answer1_PlaceGfx)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Answer4_PlaceGfx)
         Me.Controls.Add(Me.Answer3_PlaceGfx)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Correct_Box)
         Me.Controls.Add(Me.MoneyTreePanel)
         Me.Controls.Add(Me.Button2)
@@ -1500,14 +1440,17 @@ Partial Class HostContestant
         CType(Me.Lifeline1_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContestantName_Panel.ResumeLayout(False)
         Me.Question_PlaceGfx.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Answer2_PlaceGfx.ResumeLayout(False)
         Me.Answer2_PlaceGfx.PerformLayout()
         Me.Answer1_PlaceGfx.ResumeLayout(False)
         Me.Answer1_PlaceGfx.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Answer4_PlaceGfx.ResumeLayout(False)
         Me.Answer4_PlaceGfx.PerformLayout()
         Me.Answer3_PlaceGfx.ResumeLayout(False)
         Me.Answer3_PlaceGfx.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.awayPanel.ResumeLayout(False)
         Me.awayPanel.PerformLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1524,19 +1467,10 @@ Partial Class HostContestant
         Me.fallSumePanel.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.LineBeforeAnswer1_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LineBeforeQhex_Picturebox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LineBeforeAnswer3_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
     Friend WithEvents MoneyTreePanel As Panel
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Q_4 As Label
@@ -1558,15 +1492,21 @@ Partial Class HostContestant
     Friend WithEvents Lifeline3_PictureBox As PictureBox
     Friend WithEvents Lifeline2_PictureBox As PictureBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Answer4_PlaceGfx As Panel
     Friend WithEvents AnswerD_Label As Label
     Friend WithEvents MarkD_Label As Label
     Friend WithEvents Answer3_PlaceGfx As Panel
     Friend WithEvents AnswerC_Label As Label
     Friend WithEvents MarkC_Label As Label
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Answer2_PlaceGfx As Panel
+    Friend WithEvents AnswerB_Label As Label
+    Friend WithEvents MarkB_Label As Label
     Friend WithEvents Answer1_PlaceGfx As Panel
     Friend WithEvents AnswerA_Label As Label
     Friend WithEvents MarkA_Label As Label
+    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Question_PlaceGfx As Panel
     Friend WithEvents Question_Label As Label
     Friend WithEvents PronunciationHelp_Textbox As Label
@@ -1611,6 +1551,8 @@ Partial Class HostContestant
     Friend WithEvents Lozenge_2 As Label
     Friend WithEvents Lozenge_1 As Label
     Friend WithEvents ExplanationQuestion_TextBox As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents GameLimitedClock_Label As Label
     Friend WithEvents AtaAns1percents_Textbox As Label
     Friend WithEvents AtaAns1_Textbox As Label
     Friend WithEvents AtaAns2percents_Textbox As Label
@@ -1619,20 +1561,5 @@ Partial Class HostContestant
     Friend WithEvents AtaAns3_Textbox As Label
     Friend WithEvents AtaAns4percents_Textbox As Label
     Friend WithEvents AtaAns4_Textbox As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents GameLimitedClock_Label As Label
     Friend WithEvents PAFClock_Label As Label
-    Friend WithEvents LineBeforeAnswer1_PictureBox As PictureBox
-    Friend WithEvents LineBeforeAnswer3_PictureBox As PictureBox
-    Friend WithEvents LineBeforeQhex_Picturebox As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents MarkB_Label As Label
-    Friend WithEvents AnswerB_Label As Label
-    Friend WithEvents Answer2_PlaceGfx As Panel
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
 End Class

@@ -16,13 +16,28 @@
     Public Shared GrayColorBox As Color = Color.Gray
 
     Enum Resolution
+        Unknown = 0
         FullHD = 1
         HDReady = 2
     End Enum
 
     Public Shared CurrentResolution As Resolution
 
+    Private Shared Function ResolutionCast(ResolutionDimensions As String) As Resolution
+        If ResolutionDimensions.ToLower = "1366x768" Then
+            Return Resolution.HDReady
+        ElseIf ResolutionDimensions.ToLower = "1920x1080" Then
+            Return Resolution.FullHD
+        End If
+        Return Resolution.Unknown
+    End Function
+
+    Shared Sub SetDesignerData(ScreenResolution As String)
+        SetDesignerData(ResolutionCast(ScreenResolution))
+    End Sub
+
     Shared Sub SetDesignerData(ScreenResolution As Resolution)
+        CurrentResolution = ScreenResolution
         Select Case ScreenResolution
             Case Resolution.FullHD
 
